@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Projects</title>
+    <style>
+      .box {
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        color: red;
+      }
+      a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        color: rgb(67, 50, 224);
+      }
+      a:hover {
+        color: rgb(7, 0, 141);
+      }
+
+      #links-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      #links-container > div {
+        border: 1px Solid grey;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      #links-container > div:hover {
+        background-color: rgb(231, 231, 231);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Checkout All Projects</h1>
+    <div class="box">
+      <ul class="desc">
+        <h3>ToDo</h3>
+        <li>use node.js to get folders and files automatically</li>
+      </ul>
+    </div>
+
+    <div id="links-container"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

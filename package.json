@@ -1,0 +1,15 @@
+{
+  "name": "solve-js-problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "npm install",
+  "scripts": {
+    "test": "require(\"fs\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "author": "",
+  "license": "ISC"
+}
