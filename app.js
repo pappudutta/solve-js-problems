@@ -3,6 +3,10 @@ const folders = [
   "2. day-time",
   "3. current-window",
   "4. minMax",
+  "5. areaOfTriangle",
+  "6. sumArray",
+  "7. Abbreviate a Two Word Name",
+  "8. Square(n) Sum",
 ];
 
 function generateLinks() {
