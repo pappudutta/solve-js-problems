@@ -1,4 +1,5 @@
 const folders = [
+  "Test",
   "1. reverse-string",
   "2. day-time",
   "3. current-window",
@@ -16,6 +17,7 @@ const folders = [
   "15. Apply Transform Over Each Element in Array",
   "16. iife",
   "17. higherOrderFunction",
+  "19. map-function",
 ];
 
 function generateLinks() {
