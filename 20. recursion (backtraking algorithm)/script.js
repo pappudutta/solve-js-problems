@@ -20,13 +20,13 @@ function multiplyArr(arr) {
 
 console.log(multiplyArr([1, 2, 4]));
 
-// function addArr(arr) {
-//   console.log(arr);
-//   if (arr.length < 1) {
-//     return 0;
-//   } else {
-//     return arr[0] + addArr(arr.slice(1));
-//   }
-// }
+function addArr(arr) {
+  console.log(arr);
+  if (arr.length < 1) {
+    return 0;
+  } else {
+    return arr[0] + addArr(arr.slice(1));
+  }
+}
 
 // console.log(addArr([1, 2, 3, 4]));
