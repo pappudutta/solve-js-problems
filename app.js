@@ -18,6 +18,7 @@ const folders = [
   "16. iife",
   "17. higherOrderFunction",
   "19. map-function",
+  "20. recursion (backtraking algorithm)",
 ];
 
 function generateLinks() {
