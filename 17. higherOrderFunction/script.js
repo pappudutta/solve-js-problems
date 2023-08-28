@@ -3,8 +3,9 @@ function x(name) {
 }
 
 //Higher Order Function takes another function
-function sayName(myName, x) {
+function sayName(myName) {
   x(myName);
 }
 
-sayName("pappu", x);
+sayName("Neerav");
+sayName("Rubi");
