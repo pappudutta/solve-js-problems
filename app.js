@@ -7,6 +7,13 @@ const folders = [
   "6. sumArray",
   "7. Abbreviate a Two Word Name",
   "8. Square(n) Sum",
+  "9. biaryString",
+  "10. hoisting",
+  "11. Closures",
+  "12. Scope",
+  "13. CountDown",
+  "14. counter",
+  "2635. Apply Transform Over Each Element in Array",
 ];
 
 function generateLinks() {
