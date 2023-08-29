@@ -19,6 +19,8 @@ const folders = [
   "17. higherOrderFunction",
   "19. map-function",
   "20. recursion (backtraking algorithm)",
+  "21. palindromeNumber",
+  "22. oops",
 ];
 
 function generateLinks() {
