@@ -1,5 +1,5 @@
 const folders = [
-  "Test",
+  "Test & DSA",
   "1. reverse-string",
   "2. day-time",
   "3. current-window",

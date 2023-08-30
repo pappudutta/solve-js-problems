@@ -45,6 +45,42 @@
 // console.log("(2.5)", findMedianSortedArrays([1, 2], [3, 4]));
 // console.log("output: (1) ", findMedianSortedArrays([3], [-2, -1]));
 
-let arr = [1, 2, 3, 4];
-let newarr = arr.slice(0, arr.length - 1);
-console.log(newarr);
+// let arr = [1, 2, 3, 4];
+// let newarr = arr.slice(0, arr.length - 1);
+// console.log(newarr);
+
+console.log("--");
+//! 2634. Filter Elements from Array
+
+let arr = [0, 10, 20, 30];
+let fn = function greaterThan10(n) {
+  return n > 10;
+};
+// Input:
+// let arr = [1, 2, 3];
+// let fn = function firstIndex(n, i) {
+//   return i === 0;
+// };
+// Input:
+// let arr = [-2, -1, 0, 1, 2];
+// let fn = function plusOne(n) {
+//   return n + 1;
+// };
+
+// Output: [1]
+
+var filter = function (arr, fn) {
+  return arr.filter((value, index) => fn(value, index));
+};
+
+const arr1 = [0, 10, 20, 30];
+const filteredArr1 = customFilter(arr1, n => n > 10);
+console.log(filteredArr1); // Output: [20, 30]
+
+const arr2 = [1, 2, 3];
+const filteredArr2 = customFilter(arr2, (n, i) => i === 0);
+console.log(filteredArr2); // Output: [1]
+
+const arr3 = [-2, -1, 0, 1, 2];
+const filteredArr3 = customFilter(arr3, n => n + 1);
+console.log(filteredArr3); // Output: [-2, 0, 1, 2]
