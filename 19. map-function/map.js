@@ -61,4 +61,25 @@ const output = users.reduce((acc, cur) => {
 // ! first name < 30 age
 
 const below30 = users.filter(user => user.age < 30).map(a => a.firstname);
-console.log(below30);
+// console.log(below30);
+
+//! Given an array of numbers, use the map function to double each number in the array.
+// Input:
+let nums = [1, 2, 3, 4, 5];
+// Output: [2, 4, 6, 8, 10]
+
+function doubleNum(nums) {
+  let result = [];
+  result = nums.map(num => num * 2);
+  return result;
+}
+doubleNum(nums);
+
+// ! Convert an array of Celsius temperatures to Fahrenheit using the formula (C * 9/5) + 32.
+// Input: [0, 10, 20, 30]
+// Output: [32, 50, 68, 86]
+
+function celToFah(c) {
+  return c.map(temp => (temp * 9) / 5 + 32);
+}
+console.log(celToFah([0, 10, 20, 30]));
