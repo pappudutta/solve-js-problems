@@ -82,4 +82,19 @@ doubleNum(nums);
 function celToFah(c) {
   return c.map(temp => (temp * 9) / 5 + 32);
 }
-console.log(celToFah([0, 10, 20, 30]));
+celToFah([0, 10, 20, 30]);
+
+// !Filter an array of objects representing books to get only books published after the year 2000.
+let Books = [
+  { title: "Book 1", year: 1998 },
+  { title: "Book 2", year: 2005 },
+  { title: "Book 3", year: 2010 },
+  { title: "Book 4", year: 1995 },
+];
+
+function pubBooks(Books) {
+  return Books.filter(book => book.year > 2000).map(book => {
+    return book;
+  });
+}
+console.log(pubBooks(Books));
