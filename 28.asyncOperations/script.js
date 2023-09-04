@@ -66,19 +66,22 @@ let intervalId;
 function pauseInterval() {
   clearInterval(intervalId);
   intervalId = null;
+  pauseBtn.style.display = "none";
+  startBtn.style.display = "block";
 }
 
 const startChangeBg = function () {
   if (!intervalId) {
     intervalId = setInterval(changeBg, 10);
-  } else {
-    intervalId = setInterval(changeBg, 1000);
   }
 
   function changeBg() {
     body.style.backgroundColor = randomColor();
+    pauseBtn.style.display = "block";
   }
+  startBtn.style.display = "none";
 };
+pauseBtn.style.display = "none";
 
 startBtn.addEventListener("click", startChangeBg);
 pauseBtn.addEventListener("click", pauseInterval);
