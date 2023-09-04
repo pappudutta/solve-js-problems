@@ -21,6 +21,11 @@ const folders = [
   "20. recursion (backtraking algorithm)",
   "21. palindromeNumber",
   "22. oops",
+  "23.object",
+  "24.Number&Math",
+  "25.loops",
+  "26.memoization",
+  "27.DOM_projects",
 ];
 
 function generateLinks() {
