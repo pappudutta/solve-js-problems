@@ -26,6 +26,7 @@ const folders = [
   "25.loops",
   "26.memoization",
   "27.DOM_projects",
+  "28.asyncOperations",
 ];
 
 function generateLinks() {
