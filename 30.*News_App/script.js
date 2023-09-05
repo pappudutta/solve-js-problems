@@ -9,8 +9,6 @@ function reload() {
 async function fetchNews(query) {
   const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
   const data = await res.json();
-  let dex = data.articles[0].description;
-  console.log(dex.split(" ").splice(0, 20).join(" ") + " ...");
   bindData(data.articles);
 }
 
@@ -49,13 +47,13 @@ function fillDataInCard(cardClone, article) {
 }
 
 let curSelectedNav = null;
-
 function onNavItemClick(id) {
   fetchNews(id);
   console.log(id);
   const navItem = document.getElementById(id);
   curSelectedNav?.classList.remove("active");
   curSelectedNav = navItem;
+
   curSelectedNav.classList.add("active");
   searchText.value = null;
 }
@@ -64,7 +62,7 @@ const searchBtn = document.getElementById("search-btn");
 const searchText = document.getElementById("search-input");
 
 searchBtn.addEventListener("click", e => {
-  console.log(searchText.value);
+  // console.log(searchText.value);
   const query = searchText.value;
   if (!query) return;
 

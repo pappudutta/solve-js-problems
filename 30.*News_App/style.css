@@ -145,7 +145,12 @@ main {
 .card-content {
   padding: 12px;
 }
-
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
 .news-source {
   margin-block: 12px;
 }

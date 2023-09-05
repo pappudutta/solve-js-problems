@@ -28,7 +28,8 @@ const folders = [
   "27.DOM_projects",
   "28.asyncOperations",
   "29.class",
-  "30.News_App",
+  "30.*News_App",
+  "31.OptionalChaining",
 ];
 
 function generateLinks() {
@@ -43,6 +44,16 @@ function generateLinks() {
     div.appendChild(link);
 
     container.appendChild(div);
+    let eachFolders = folder.split("");
+    eachFolders.forEach(eachFolder => {
+      if (eachFolder === "*") {
+        container.childNodes.forEach(childNode => {
+          if (childNode.textContent === folder) {
+            childNode.style.backgroundColor = "rgba(255, 0, 0, 0.4)";
+          }
+        });
+      }
+    });
   });
 }
 
