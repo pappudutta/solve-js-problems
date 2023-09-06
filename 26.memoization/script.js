@@ -1,28 +1,31 @@
 function memoize(fn) {
-  const cache = new Map();
-
+  const cache = {};
   return function (...args) {
     const key = JSON.stringify(args);
-    console.log(args);
-    console.log(JSON.stringify(args));
-    if (cache.has(key)) {
-      return cache.get(key);
-    } else {
-      const result = fn(...args);
-      cache.set(key, result);
-      return result;
+    // console.log("key:", key);
+    if (key in cache) {
+      console.log("cache:", cache);
+      console.log("cache:", cache[key]);
+      return cache[key];
     }
+    const result = fn(...args);
+    cache[key] = result;
+    // console.log("cache:", cache[key]);
+    // console.log("cache:", String(cache));
+    return result;
   };
 }
 
-function expensiveOperation(n, m) {
-  console.log(`Calculating for ${n}`);
-  return (r = n * 2 + m * 3);
-}
+const memoizedSum = memoize(function (a, b) {
+  return a + b;
+});
+const memoizedSub = memoize(function (a, b) {
+  return a - b;
+});
 
-const memoizedExpensiveOperation = memoize(expensiveOperation);
-
-console.log(memoizedExpensiveOperation(1, 2));
-// console.log(memoizedExpensiveOperation(1, 2));
-
-// console.log(memoizedExpensiveOperation(5));
+memoizedSum(1, 1);
+memoizedSum(1, 1);
+memoizedSub(1, 1);
+memoizedSub(1, 1);
+// console.log(memoizedSum(1, 1));
+// console.log(callCount);

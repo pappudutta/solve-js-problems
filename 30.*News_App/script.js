@@ -7,9 +7,11 @@ function reload() {
 }
 
 async function fetchNews(query) {
+  console.log("loading");
   const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
   const data = await res.json();
   bindData(data.articles);
+  console.log("Done");
 }
 
 function bindData(articles) {
@@ -49,7 +51,6 @@ function fillDataInCard(cardClone, article) {
 let curSelectedNav = null;
 function onNavItemClick(id) {
   fetchNews(id);
-  console.log(id);
   const navItem = document.getElementById(id);
   curSelectedNav?.classList.remove("active");
   curSelectedNav = navItem;
