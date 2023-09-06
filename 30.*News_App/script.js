@@ -1,7 +1,7 @@
 const API_KEY = "62ccd6d8c909419eb2d8016dd4283628";
 const url = "https://newsapi.org/v2/everything?q=";
 
-window.addEventListener("load", () => fetchNews("Assam"));
+window.addEventListener("load", () => fetchNews("India"));
 function reload() {
   window.location.reload();
 }
