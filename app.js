@@ -30,6 +30,7 @@ const folders = [
   "29.class",
   "30.*News_App",
   "31.OptionalChaining",
+  "32.Built_in_class",
 ];
 
 function generateLinks() {
